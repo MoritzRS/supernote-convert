@@ -1,0 +1,10 @@
+FROM archlinux:base
+
+RUN pacman -Syy --noconfirm
+RUN pacman -S --noconfirm calibre
+
+WORKDIR /converter
+COPY convert.sh convert.sh
+
+ENV QTWEBENGINE_DISABLE_SANDBOX=1
+CMD ["/bin/bash", "convert.sh"]

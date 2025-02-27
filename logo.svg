@@ -1,0 +1,18 @@
+<svg width="1000" height="300" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        rect { fill: #fff }
+        text tspan:first-child { fill: #71717b }
+        text tspan:last-child { fill: #0d1117 }
+
+        @media (prefers-color-scheme: dark) {
+            rect { fill: #0d1117 }
+            text tspan:last-child { fill: #fff }
+        }
+    </style>
+    <rect height="300" width="1000" x="0" y="0" />
+    <g transform="translate(500,150)" text-anchor="middle" dominant-baseline="central">
+        <text font-size="50" font-family="monospace">
+            <tspan>supernote</tspan><tspan>-convert</tspan>
+        </text>
+    </g>
+</svg>
